@@ -1,10 +1,13 @@
 package org.example.dao;
 
 import org.apache.commons.io.IOUtils;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.io.InputStream;
 import java.util.List;
 
+@Repository
 public class DeptDaoImpl implements DeptDao{
     public List<String> getDeptString(){
         // 获取部门流
